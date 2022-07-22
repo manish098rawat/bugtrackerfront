@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Header from './component/Header';
+import User from './component/Admin/user/adminUser';
+import Adduser from './component/Admin/user/adduser';
+import EmployeeModule from './component/Employee/Employee';
+import AdminEmployee from './component/Admin/Employee/AdminEmployee';
+import Home from './component/Home/home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header/>
+      <Home/>
     </div>
   );
 }
