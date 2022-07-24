@@ -1,11 +1,13 @@
-import logedin from "../Login_signup/Logedin"
+import React from "react";
+import Header from '../Header';
 
 function Home() {
-    return(
-    <>
-    <h1> this is Home</h1>
-    <span onClick={()=>logedin()} className="btn" > to Loggged in</span>
-    </>
-    )
+  return (
+    <div>
+        <Header/>
+        <br/><br/>
+    </div>
+  );
 }
-export default Home
+
+export default Home;

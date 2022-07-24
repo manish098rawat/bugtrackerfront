@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-function User() {
+function AdminUser() {
     
     const [users, setUsers] = useState([
         { id: 1, email: 'frank@gmail.com', password: 'qwert', user_name: 'rohan', project_id:4 },
@@ -31,4 +31,4 @@ function User() {
         </div>
     );
 }
-export default User
+export default AdminUser

@@ -1,6 +1,6 @@
-function project(params) {
+function AdminProject(params) {
     return(
         <h1>this is project</h1>
     )
 }
-export default project
+export default AdminProject
