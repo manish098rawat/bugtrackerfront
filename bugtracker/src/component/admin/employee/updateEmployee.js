@@ -26,7 +26,7 @@ function Employeeupdate(bug) {
         {Bugs.map((B) => {
           return (
             <option value={B.bugName} key={B.id}>
-              {B.bugName} - ${B.id}
+              ${B.id}: {B.bugName}  
             </option>
           );
         })}

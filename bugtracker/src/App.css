@@ -36,6 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  color: #2f0d11;
+  text-decoration: underline;
+}
+
 table {
   border: 2px solid forestgreen;
   width: 800px;
@@ -51,5 +57,21 @@ td {
 }
 
 .navbarWrapper a{
-  padding-left: 30%;
+  padding-left: 15%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
+  width: 100%;
+}
+.input {
+  padding: 10px;
+  display: block;
+  width: 20%;
+  margin: auto;
+}
+.adminnav {
+  background-color: #8f8c8c;
 }

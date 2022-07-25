@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom';
 function Adminheader(){
     return(
-        <Navbar bg="light" variant="light">
+        <Navbar className="adminnav">
         <Container>
-          <Navbar.Brand>Admin Panel</Navbar.Brand>
+          <Navbar.Brand href="/">Admin Panel</Navbar.Brand>
           <Nav className="me-auto navbarWrapper">
-            <Link to="/admin/employee">Employee</Link>
-            <Link to="/admin/user">User</Link>
-            <Link to="/admin/products">Product</Link>
-            <Link to="/admin/bugs">Bugs</Link>
+            <Link to="/adminlist">Admin List</Link>
+            <Link to="/employee">Employee</Link>
+            <Link to="/user">User</Link>
+            <Link to="/projects">Project</Link>
+            <Link to="/bugs">Bugs</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/signup">Signup</Link>
           </Nav>
         </Container>
       </Navbar>

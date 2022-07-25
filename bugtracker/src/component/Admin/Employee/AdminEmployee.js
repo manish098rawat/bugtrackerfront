@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Popup from "reactjs-popup";
 import Employeeupdate from "./updateEmployee";
 
 
@@ -22,18 +21,11 @@ function AdminEmployee() {
     await axios.delete("http://localhost:8080/employee/delete/"+emp.id);
     getEmployee()
   }
-
-  function checkBug(params) {
-    if (params.id == null) {
-      return <>'null'</>;
-    } else {
-      return params.id;
-    }
-  }
+  
 
   return (
     <div className="container">
-      <h3 className="p-3 text-center">React - Display a list of Employees</h3>
+      <h3 className="p-3 text-center">list of Employees</h3>
       <table striped bordered hover>
         <thead>
           <tr>
@@ -52,7 +44,7 @@ function AdminEmployee() {
               <td>{Employee.employeeName}</td>
               <td>{Employee.email}</td>
               <td>{Employee.employeeContact}</td>
-              <td>{() => {}}</td>
+              <td>Bug_id {Employee.bug.id}</td>
               <td>
                 <span onClick={() => Employeeupdate(Employee.bug)} className="btn">
                 Update
