@@ -1,6 +1,10 @@
-function User(params) {
+import React from "react";
+function UserModule() {
     return(
-        <h1>this is User</h1>
-    )
+    <div>
+            <h1>this page gets User detail from login page </h1>
+            <h2> And than User can create the bug</h2>
+    </div>
+    );
 }
-export default User
+export default UserModule

@@ -1,5 +1,5 @@
 import Admin from "../Admin/admin"
-import EmployeeModule from "../Employee/Employee"
+import EmployeeModule from "../employee/Employee"
 import User from "../User/User"
 
 function logedin() {

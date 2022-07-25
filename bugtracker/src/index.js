@@ -10,3 +10,17 @@ root.render(
   </React.StrictMode>
 );
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//     document.getElementById('root')
+//   </React.StrictMode>
+// );
+
+// ReactDOM.render(
+//   <React>
+//     <App/>
+//     document.getElementById('root')
+//   </React>
+// );
+
